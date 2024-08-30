@@ -4,7 +4,10 @@ import './App.css'
 import { AiOutlineLoading3Quarters } from "react-icons/ai";
 import Apidata from './components/Apidata'
 import TodoList from './TodoList';
-
+import Bootstraps from './components/Bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Navbotstrap from './components/Navbotstrap';
+import Forms from './components/Forms';
 function App() {
   
  
@@ -14,15 +17,23 @@ function App() {
 
   return (
     <>
-    <h1>This is website</h1>
-   
     
-    <Suspense fallback={<div><AiOutlineLoading3Quarters style={{width:"200px",height:"200px"}}/></div>}>
-    <Lazys/>
-    </Suspense>
+
+      <h1>This is website</h1>
+      <Forms/>
+      
      
+    
+      
     </>
   )
 }
 
 export default App;
+
+
+  
+      // <Suspense fallback={<div><AiOutlineLoading3Quarters style={{width:"200px",height:"200px"}}/></div>}>
+      // <Lazys/>
+      // </Suspense>
+    
